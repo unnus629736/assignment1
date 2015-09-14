@@ -35,18 +35,24 @@ public class bargraph {
        p.down();
        p.setDirection(90);
        p.move(num2);
+       p.move(20);
+       p.drawString("("+num2+")");
        //bar 3 
        p.up();
        p.move(-50, -150);
        p.down();
        p.setDirection(90);
        p.move(num3);
+       p.move(20);
+       p.drawString("("+num3+")");
        //bar 4 
        p.up();
        p.move(0, -150);
        p.down();
        p.setDirection(90);
        p.move(num4);
+       p.move(20);
+       p.drawString("("+num4+")");
     }
     
 }
