@@ -1,20 +1,52 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author unnu3590
- */
+import hsa.*;
+import TurtleGraphics.*;
 public class bargraph {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+      Console c = new Console();
+      //data entery
+      double num1,num2, num3, num4; 
+       c.print("Enter value 1 --> ");
+       num1 = c.readDouble();
+       c.print("Enter value 2 --> ");
+       num2 = c.readDouble();
+       c.print("Enter value 3 --> ");
+       num3 = c.readDouble();
+       c.print("Enter value 4 --> ");
+       num4 = c.readDouble();
+       c.close();
+       //drawing graph
+       SketchPadWindow sp = new SketchPadWindow(400,400);
+       StandardPen p = new StandardPen(sp);
+       p.setWidth(20);
+       //bar 1
+       p.up();
+       p.move(-150, -150);
+       p.down();
+       p.setDirection(90);
+       p.move(num1);
+       p.up();
+       p.move(20);
+       p.drawString("("+num1+")");
+       //bar 2
+       p.up();
+       p.move(-100, -150);
+       p.down();
+       p.setDirection(90);
+       p.move(num2);
+       //bar 3 
+       p.up();
+       p.move(-50, -150);
+       p.down();
+       p.setDirection(90);
+       p.move(num3);
+       //bar 4 
+       p.up();
+       p.move(0, -150);
+       p.down();
+       p.setDirection(90);
+       p.move(num4);
     }
     
 }
