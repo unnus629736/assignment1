@@ -24,9 +24,10 @@ public class makeLine {
         
         p.up();
         p.move(x1-200,y1-200);
+        p.drawString("("+x1+","+y1+")");
         p.down();
         p.move(y2-200, y1-200);
-        
+        p.drawString("("+x2+","+y2+")");
     }
     
 }
